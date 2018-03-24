@@ -113,14 +113,14 @@ input[type="radio"].visually-hidden {
 	flex-direction: column;
 	align-items: center;
 }
-.description-title {
+.description__title {
 	margin-bottom: 30px;
 	text-align: center;
 	font-weight: bold;
 	font-size: 21px;
 	line-height: 26px;
 }
-.description-advantage {
+.description__advantage {
 	margin-bottom: 48px;
 	line-height: 26px;
 	color: #333;
@@ -143,9 +143,7 @@ input[type="radio"].visually-hidden {
 	min-width: 400px;
 	min-height: 256px;
 	margin: 0;
-	
 	color: #fff;
-
 	background-color: #95bed7;
 }
 .features-city__title,
@@ -222,6 +220,9 @@ input[type="radio"].visually-hidden {
 .features-benefits__item-text {
 	margin-bottom: 83px;
 }
+
+/* FEATURES-CANYON */
+
 .features-canyon {
 	display: flex;
 }
@@ -251,21 +252,21 @@ input[type="radio"].visually-hidden {
 .search {
 	font-family: "PT Sans", "Arial", sans-serif;
 }
-.search-title {
+.search__title {
 	margin: 0;
 	margin-bottom: 25px;
 	text-align: center;
 	font-size: 30px;
 	line-height: 36px;
 }
-.search-text {
+.search__text {
 	margin: 0;
 	margin-bottom: 46px;
 	text-align: center;
 	line-height: 24px;
 	color: #333;
 }
-.button-search {
+.button__search {
 	display: block;
 	position: relative;
 	margin-left: auto;
@@ -284,6 +285,7 @@ input[type="radio"].visually-hidden {
 }
 
 /** SEARCH FORM **/
+
 .search-form {
 	position: absolute;
 	left: 316px;
@@ -378,7 +380,6 @@ input[type="radio"].visually-hidden {
   background-color: #a9a9a9;
 }
 .number-plus::before {
-	
   transform: rotate(90deg);
 }
 .search-form__button {
