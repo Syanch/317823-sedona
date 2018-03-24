@@ -45,10 +45,10 @@ input[type="radio"].visually-hidden {
 }
 .main-navigation__logo-link {
 	position: absolute;
-	// left: 546px;
+	left: 546px;
 	top: 0;
 	left: 50%;
-	    transform: translateX(-50%);
+	transform: translateX(-50%);
 }
 .main-navigation__list,
 .features-benefits__list,
@@ -494,12 +494,16 @@ input[type="radio"].visually-hidden {
 }
 
 /*** CATALOG ***/
+
 .services {
 	margin-bottom: 30px;
 	background-image: url("../img/filter-background.jpg");
 	background-repeat: no-repeat;
 }
-.services-form {
+
+/* FORM */
+
+.services__form {
 	display: flex;
 }
 .infrastructure,
@@ -517,37 +521,37 @@ input[type="radio"].visually-hidden {
 	margin-left: 115px;
 	margin-right: 347px;
 }
-.infrastructure-list,
-.housing-list {
+.infrastructure__list,
+.housing__list {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
-.infrastructure-title,
-.housing-title,
-.price-title {
+.infrastructure__title,
+.housing__title,
+.price__title {
 	margin-bottom: 23px;
 	font-size: 16px;
 	font-weight: bold;
 	color: #fff;
 }
-.infrastructure-item,
-.housing-item {
+.infrastructure__item,
+.housing__item {
 	margin-bottom: 25px;
 	color: #fff;
 }
-.infrastructure-item label,
-.housing-item label {
+.infrastructure__item label,
+.housing__item label {
 	position: relative;
 	padding-left: 40px;
 	cursor: pointer;
 }
-.infrastructure-item input,
-.housing-item input {
+.infrastructure__item input,
+.housing__item input {
 	position: relative;
 }
-.infrastructure-item input +label::before,
-.housing-item input +label::before {
+.infrastructure__item input +label::before,
+.housing__item input +label::before {
 	content: "";
 	position: absolute;
   top: -3px;
@@ -560,17 +564,20 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   visibility: visible;
 }
-.infrastructure-item input:checked +label::before,
-.housing-item input:checked +label::before	{
+.infrastructure__item input:checked +label::before,
+.housing__item input:checked +label::before	{
 	content: "";
   background-image: url("../img/checkbox-on.svg");
 }
+
+/* PRICE */
+
 .price {
 	width: 330px;
 	color: #fff;
 	text-transform: uppercase;
 }
-.price-controls {
+.price__controls {
 	position: relative;
 	height: 36px;
 	margin-bottom: 20px;
@@ -578,7 +585,7 @@ input[type="radio"].visually-hidden {
 	border-radius: 2px;
 	font-size: 0;
 }
-.price-controls::after {
+.price__controls::after {
 	content: "";
 	position: absolute;
 	top: 50%;
@@ -588,7 +595,7 @@ input[type="radio"].visually-hidden {
 	background-color: #fff;
 	transform: translate(-50%, -50%);
 }
-.price-controls label {
+.price__controls label {
 	display: inline-block;
 	vertical-align: top;
 	padding-top: 6px;
@@ -596,13 +603,13 @@ input[type="radio"].visually-hidden {
 	line-height: 21px;
 	cursor: pointer;
 }
-.price-controls .min-price,
-.price-controls .max-price {
+.price__controls .min-price,
+.price__controls .max-price {
 	width: 90px;
 	padding-left: 65px;
 
 }
-.price-controls input {
+.price__controls input {
 	width: 50px;
 	margin: 0;
 	color: inherit;
@@ -610,21 +617,21 @@ input[type="radio"].visually-hidden {
 	background: none;
 	border: none;
 }
-.price-control {
+.price__control {
 	position: relative;
 	margin-bottom: 32px;
 }
-.price-control .scale {
+.price__control .scale {
 	height: 2px;
 	background-color: rgba(255, 255, 255, 0.3);
 }
-.price-control .bar {
+.price__control .bar {
 	width: 80%;
 	height: 2px;
 
 	background-color: #ffffff;
 }
-.price-toggle {
+.price__toggle {
 	position: absolute;
 	top: -9px;
 	width: 4px;
@@ -635,16 +642,16 @@ input[type="radio"].visually-hidden {
 	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
 	cursor: pointer;
 }
-.price-toggle:hover {
+.price__toggle:hover {
 	background-color: #1c4f80;
 }
-.price-toggle-min {
+.price__toggle--min {
 	left: 0;
 }
-.price-toggle-max {
+.price__toggle--max {
 	left: 80%;
 }
-.price-button {
+.price__button {
 	display: block;
 	margin: 0 auto;
 	margin-bottom: 28px;
@@ -658,16 +665,17 @@ input[type="radio"].visually-hidden {
 	border-radius: 2px;
 	cursor: pointer;
 }
-.price-button:hover {
+.price__button:hover {
 	color: #000;
 	background-color: #fff;
 }
+
 /** BREADCRUMBS **/
 
 .breadcrumbs {
 	display: flex;
 }
-.breadcrumbs-title {
+.breadcrumbs__title {
 	margin: 0;
 	margin-left: 72px;
 	margin-right: 49px;
@@ -676,11 +684,10 @@ input[type="radio"].visually-hidden {
 	line-height: 26px;
 	font-weight: bold;
 }
-.breadcrumbs-list {
+.breadcrumbs__list {
 	display: flex;
-
 }
-.breadcrumbs-link {
+.breadcrumbs__link {
 	position: relative;
 	margin-left: 33px;
 	font-size: 12px;
@@ -688,10 +695,10 @@ input[type="radio"].visually-hidden {
 	color: #81b3d2;
 	opacity: 0.3;
 }
-.breadcrumbs-list .sorting {
+.breadcrumbs__list .sorting {
 	color: #000;
 }
-.breadcrumbs-link:not(.active):not(.sorting)::before {
+.breadcrumbs__link:not(.active):not(.sorting)::before {
 	content: "";
 	position: absolute;
 	top: 16px;
@@ -699,11 +706,11 @@ input[type="radio"].visually-hidden {
 	right: 0;
 	border-bottom: 1px dashed #81b3d2;
 }
-.breadcrumbs-list .sorting {
+.breadcrumbs__list .sorting {
 	margin-right: 40px;
 	opacity: 1;
 }
-.breadcrumbs-list .active {
+.breadcrumbs__list .active {
 	opacity: 1;
 }
 .breadcrumbs-list__buttons {
@@ -741,42 +748,44 @@ input[type="radio"].visually-hidden {
 .breadcrumbs-list__buttons .link-up:active {
 	border-bottom: 10px solid #81b3d2;
 }
-.variant {
-    flex-grow: 1;
+
+/* LODGING */
+
+.lodging__variant {
+	flex-grow: 1;
 }
-.catalog-item {
+.lodging__catalog-item {
   display: flex;
   border-top: 1px solid #f2f2f2;
 }
-.catalog-item img {
+.lodging__catalog-item img {
   padding: 30px 0;
   padding-right: 31px;
   padding-left: 72px;
 }
-
-.name-item {
+.lodging__name-item {
   margin-top: 26px;
   margin-bottom: 11px;
 }
-.accommodation-type,
-.price-for-night {
+.lodging__accommodation-type,
+.lodging__price-night {
   display: inline-block;
   vertical-align: middle;
   min-width: 111px;
   margin-bottom: 17.5px;
 }
-.name-item a {
+.lodging__name-item a {
   text-decoration: none;
   color: #000000;
 }
-.name-item a:hover,
-.name-item a:focus {
+.lodging__name-item a:hover,
+.lodging__name-item a:focus {
   color: #81b3d2;
 }
-.name-item a:active {
+.lodging__name-item a:active {
   color: #b2b2b2;
 }
-.button {
+.lodging__button {
   padding: 4px 17px;
   color: #ffffff;
   font-size: 14px;

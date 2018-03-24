@@ -33,19 +33,19 @@
 
 		<main class="main">
 			<section class="services">
-				<form class="services-form" action="get">
+				<form class="services__form" action="get">
 					<fieldset class="infrastructure">
-						<legend class="infrastructure-title">Инфраструктура:</legend>
-							<ul class="infrastructure-list">
-								<li class="infrastructure-item">
+						<legend class="infrastructure__title">Инфраструктура:</legend>
+							<ul class="infrastructure__list">
+								<li class="infrastructure__item">
 									<input class="visually-hidden infrastructure-element" type="checkbox" id="swimming-pool" name="swimming-pool" checked>
 									<label for="swimming-pool">Бассейн</label>
 								</li>
-								<li class="infrastructure-item">
+								<li class="infrastructure__item">
 									<input class="visually-hidden infrastructure-element" type="checkbox" id="parking" name="parking">
 									<label for="parking">Парковка</label>
 								</li>
-								<li class="infrastructure-item">
+								<li class="infrastructure__item">
 									<input class="visually-hidden infrastructure-element" type="checkbox" id="wi-fi" name="wi-fi">
 									<label for="wi-fi">Wi-fi</label>
 								</li>
@@ -53,17 +53,17 @@
 					</fieldset>
 
 					<fieldset class="housing">
-						<legend class="housing-title">Тип жилья:</legend>
-							<ul class="housing-list">
-								<li class="housing-item">
+						<legend class="housing__title">Тип жилья:</legend>
+							<ul class="housing__list">
+								<li class="housing__item">
 									<input class="visually-hidden housing-element" type="checkbox" id="hostelry" name="hostelry" checked>
 									<label for="hostelry">Гостиница</label>
 								</li>
-								<li class="housing-item">
+								<li class="housing__item">
 									<input class="visually-hidden housing-element" type="checkbox" id="hotel" name="hotel" checked>
 									<label for="hotel">Мотель</label>
 								</li>
-								<li class="housing-item">
+								<li class="housing__item">
 									<input class="visually-hidden housing-element" type="checkbox" id="apartments" name="apartments" checked>
 									<label for="apartments">Апартаменты</label>
 								</li>
@@ -71,37 +71,37 @@
 					</fieldset>
 
 					<fieldset class="price">
-						<legend class="price-title">Стоимость в сутки (Р):</legend>
-							<div class="price-controls">
+						<legend class="price__title">Стоимость в сутки (Р):</legend>
+							<div class="price__controls">
 								<label for="" class="min-price"> От <input type="text" name="min-price" value="0"></label>
 								<label for="" class="max-price"> До <input type="text" name="max-price" value="3000"></label>
 							</div>
-							<div class="price-control">
+							<div class="price__control">
 								<div class="scale">
 									<div class="bar"></div>
 								</div>
-								<div class="price-toggle price-toggle-min"></div>
-								<div class="price-toggle price-toggle-max"></div>
+								<div class="price__toggle price__toggle--min"></div>
+								<div class="price__toggle price__toggle--max"></div>
 							</div>
-							<button class="price-button">Показать</button>
+							<button class="price__button">Показать</button>
 					</fieldset>
 				</form>
 			</section>
 
 			<section class="breadcrumbs">
-				<h1 class="breadcrumbs-title">Найдено: 3</h1>
+				<h1 class="breadcrumbs__title">Найдено: 3</h1>
 					<ul class="breadcrumbs__list">
-						<li class="breadcrumbs-item">
-							<a class="breadcrumbs-link sorting">Сортировка:</a>
+						<li class="breadcrumbs__item">
+							<a class="breadcrumbs__link sorting">Сортировка:</a>
 						</li>
-						<li class="breadcrumbs-item">
-							<a href="" class="breadcrumbs-link active">По цене</a>
+						<li class="breadcrumbs__item">
+							<a href="" class="breadcrumbs__link active">По цене</a>
 						</li>
-						<li class="breadcrumbs-item">
-							<a href="" class="breadcrumbs-link">По типу</a>
+						<li class="breadcrumbs__item">
+							<a href="" class="breadcrumbs__link">По типу</a>
 						</li>
-						<li class="breadcrumbs-item">
-							<a href="" class="breadcrumbs-link">По рейтингу</a>
+						<li class="breadcrumbs__item">
+							<a href="" class="breadcrumbs__link">По рейтингу</a>
 						</li>
 					</ul>
 					<ul class="breadcrumbs-list__buttons">
@@ -119,15 +119,17 @@
 			</section>
 
 			<section class="lodging">
-				<div class="catalog-item">
+				<div class="lodging__catalog-item">
 	        <img src="img/Layer21.jpg" width="135" height="90" alt="Amara Resort & Spa">
-	        <div class="variant">
-	          <h2 class="name-item"><a href="#">Amara Resort & Spa</a></h2>
-	          <span class="accommodation-type">Гостиница</span>
-	          <span class="price-for-night">от 4000 р.</span>
+	        <div class="lodging__variant">
+	          <h2 class="lodging__name-item">
+	          	<a href="#">Amara Resort & Spa</a>
+	          </h2>
+	          <span class="lodging__accommodation-type">Гостиница</span>
+	          <span class="lodging__price-night">от 4000 р.</span>
 	          <div>
-	            <a href="" class="button more">Подробнее</a>
-	            <a href="" class="button book">Забронировать</a>
+	            <a href="#" class="lodging__button more">Подробнее</a>
+	            <a href="#" class="lodging__button book">Забронировать</a>
 	          </div>
 	        </div>
 	        <div class="stars">
@@ -136,15 +138,17 @@
 	        </div>
 	      </div>
 
-	      <div class="catalog-item">
+	      <div class="lodging__catalog-item">
 	        <img src="img/Layer89.jpg" width="135" height="90" alt="Desert Quil Inn">
-	        <div class="variant">
-	          <h2 class="name-item"><a href="#">Desert Quail Inn</a></h2>
-	          <span class="accommodation-type">Мотель</span>
-	          <span class="price-for-night">от 3000 р.</span>
+	        <div class="lodging__variant">
+	          <h2 class="lodging__name-item">
+	          	<a href="#">Desert Quail Inn</a>
+	          </h2>
+	          <span class="lodging__accommodation-type">Мотель</span>
+	          <span class="lodging__price-night">от 3000 р.</span>
 	          <div>
-	            <a href="" class="button more">Подробнее</a>
-	            <a href="" class="button book">Забронировать</a>
+	            <a href="#" class="lodging__button more">Подробнее</a>
+	            <a href="#" class="lodging__button book">Забронировать</a>
 	          </div>
 	        </div>
 	        <div class="stars">
@@ -153,15 +157,17 @@
 	        </div>
 	      </div>
 
-	      <div class="catalog-item">
+	      <div class="lodging__catalog-item">
 	        <img src="img/villa-photo.jpg" width="135" height="90" alt="Villas At Poco Diablo">
-	        <div class="variant">
-	          <h2 class="name-item"><a href="#">Villas At Poco Diablo</a></h2>
-	          <span class="accommodation-type">Апартаменты</span>
-	          <span class="price-for-night">от 2000 р.</span>
+	        <div class="lodging__variant">
+	          <h2 class="lodging__name-item">
+	          	<a href="#">Villas At Poco Diablo</a>
+	          </h2>
+	          <span class="lodging__accommodation-type">Апартаменты</span>
+	          <span class="lodging__price-night">от 2000 р.</span>
 	          <div>
-	            <a href="" class="button more">Подробнее</a>
-	            <a href="" class="button book">Забронировать</a>
+	            <a href="#" class="lodging__button more">Подробнее</a>
+	            <a href="#" class="lodging__button book">Забронировать</a>
 	          </div>
 	        </div>
 	        <div class="stars">
