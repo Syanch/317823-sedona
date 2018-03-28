@@ -300,10 +300,27 @@ input[type="radio"].visually-hidden {
 /** SEARCH FORM **/
 
 .search-form {
+	display: none;
 	position: absolute;
 	left: 316px;
 	padding: 55px;
 	background-color: #fff;
+}
+.form-search {
+	display: block;
+	animation-name: translate;
+	animation-duration: 1.5s;
+}
+@keyframes translate {
+	0% {
+		transform: translateX(-2000px);
+	}
+	80% {
+		transform: translateX(60px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
 }
 .search-form__item {
 	display: flex;
