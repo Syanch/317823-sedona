@@ -11,7 +11,10 @@ body {
 a {
 	text-decoration: none;
 }
-
+img {
+  max-width: 100%;
+  height: auto;
+}
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -92,6 +95,7 @@ input[type="radio"].visually-hidden {
 	opacity: 30%:
 }
 .main-navigation__link:focus {
+	outline: none;
 	color: #766357;
 }
 
@@ -284,12 +288,13 @@ input[type="radio"].visually-hidden {
 	text-transform: uppercase;
 	background-color: #766357;
 }
-.button__search:hover {
+.button__search:hover,
+.button__search:focus {
 	 background-color: #604e43;
 }
 .button__search:active {
+	color: rgba(255, 255, 255, 0.3);
 	background-color: #503e33;
-	opacity: 0.3;
 }
 
 /** SEARCH FORM **/
@@ -330,7 +335,16 @@ input[type="radio"].visually-hidden {
 	border: none;
 	line-height: 26px;
 	font-weight: bold;
+	cursor: pointer;
 	background-color: #f2f2f2;
+}
+.search-form__input:hover {
+	background-color: #ebebeb;
+}
+.search-form__input:active,
+.search-form__input:focus {
+	outline: #e5e5e5 solid 2px;
+	background-color: #ffffff;
 }
 .panel .search-form__label {
 	width: 100%;
@@ -365,6 +379,9 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
   border: none;
 }
+.button-number:focus {
+	outline: #e5e5e5 solid 2px;
+}
 .number-plus {
 	right: 0;
 }
@@ -390,6 +407,20 @@ input[type="radio"].visually-hidden {
 .number-plus::before {
   transform: rotate(90deg);
 }
+.number-minus:hover::after {
+	background-color: #111111;
+}
+.number-minus:active::after {
+	background-color: #81b3d2;
+}
+.number-plus:hover::after,
+.number-plus:hover::before {
+	background-color: #111111;
+}
+.number-plus:active::after,
+.number-plus:active::before {
+	background-color: #81b3d2;
+}
 .search-form__button {
 	position: absolute;
   top: 0;
@@ -402,8 +433,14 @@ input[type="radio"].visually-hidden {
   border: none;
   fill: #d9d9d9;
 }
-.search-form__button {
-	position: absolute;
+.search-form__button:hover {
+	fill: #111111;
+}
+.search-form__button:active {
+	fill: #81b3d2;
+}
+.search-form__button:focus {
+	outline: #e5e5e5 solid 2px;
 }
 .button-find {
 	display: block;
@@ -419,7 +456,14 @@ input[type="radio"].visually-hidden {
 	text-transform: uppercase;
 	background-color: #81b3d2;
 }
-
+.button-find:hover,
+.button-find:focus {
+	background-color: #669ec0;
+}
+.button-find:active {
+	background-color: #5496bd;
+	color: rgba(255, 255, 255, 0.3);
+}
 /* MAP */
 
 .map {
