@@ -354,6 +354,28 @@ input[type="radio"].visually-hidden {
 	animation-name: translate;
 	animation-duration: 0.9s;
 }
+.form-error {
+	animation-name: shake;
+	animation-duration: 0.4s;
+}
+@keyframes shake {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+
+	15%,
+	45%,
+	75% {
+		transform: translateX(-5px);
+	}
+
+	30%,
+	60%,
+	90% {
+		transform: translateX(5px);
+	}
+}
 @keyframes translate {
 	0% {
 		transform: translateX(-2000px);
