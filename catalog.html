@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Catalog</title>
+	<title>HTML Academy: Седона</title>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -11,7 +11,7 @@
 	<div class="container">
 		<header class="main-header">
 			<nav class="main-navigation">
-				<a class="main-navigation__logo-link">
+				<a class="main-navigation__logo-link" href="index.html">
 					<img class="main-navigation__logo-image" width="137" height="70" src="img/Layer6.png" alt="logo">
 				</a>
 				<ul class="main-navigation__list">
@@ -33,6 +33,7 @@
 
 		<main class="main">
 			<section class="services">
+				<h1 class="visually-hidden">Сервисы</h1>
 				<form class="services__form" action="get">
 					<fieldset class="infrastructure">
 						<legend class="infrastructure__title">Инфраструктура:</legend>
@@ -73,8 +74,8 @@
 					<fieldset class="price">
 						<legend class="price__title">Стоимость в сутки (Р):</legend>
 							<div class="price__controls">
-								<label for="" class="min-price"> От <input type="text" name="min-price" value="0"></label>
-								<label for="" class="max-price"> До <input type="text" name="max-price" value="3000"></label>
+								<label for="min-price" class="min-price"> От <input id="min-price" type="text" name="min-price" value="0"></label>
+								<label for="max-price" class="max-price"> До <input id="max-price" type="text" name="max-price" value="3000"></label>
 							</div>
 							<div class="price__control">
 								<div class="scale">
@@ -89,7 +90,7 @@
 			</section>
 
 			<section class="breadcrumbs">
-				<h1 class="breadcrumbs__title">Найдено: 3</h1>
+				<h2 class="breadcrumbs__title">Найдено: 3</h2>
 					<ul class="breadcrumbs__list">
 						<li class="breadcrumbs__item">
 							<a class="breadcrumbs__link sorting">Сортировка:</a>
@@ -112,7 +113,7 @@
 						</li>
 						<li class="breadcrumbs-list__buttons-element">
 							<a href="#" class="breadcrumbs-list__link link-down">
-								<span class="visually-hidden">Сортировка по убыванию<</span>
+								<span class="visually-hidden">Сортировка по убыванию</span>
 							</a>
 						</li>
 					</ul>

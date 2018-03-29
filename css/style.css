@@ -102,7 +102,7 @@ input[type="radio"].visually-hidden {
 /*** MAIN ***/ 
 
 .intro {
-	min-height: 509px;
+	min-height: 508px;
 	background-image: url("../img/Shape.jpg");
 	background-repeat: no-repeat;
 	background-position: 0% 21%;
@@ -118,14 +118,14 @@ input[type="radio"].visually-hidden {
 	align-items: center;
 }
 .description__title {
-	margin-bottom: 30px;
+	margin-bottom: 27px;
 	text-align: center;
 	font-weight: bold;
 	font-size: 21px;
 	line-height: 26px;
 }
 .description__advantage {
-	margin-bottom: 48px;
+	margin-bottom: 47px;
 	line-height: 26px;
 	color: #333;
 }
@@ -134,13 +134,12 @@ input[type="radio"].visually-hidden {
 
 .features-city {
 	display: flex;
-	margin-bottom: 56px;
+	margin-bottom: 58px;
 }
 .features-city__description,
 .features-canyon__description {
 	display: flex;
 	flex-direction: column;
-	
 }
 .features-city__description,
 .features-canyon__description {
@@ -163,9 +162,30 @@ input[type="radio"].visually-hidden {
 	text-align: center;
 	margin-bottom: 23px;
 }
-.features-city__number
-.features-canyon__number {
+.features-city__number,
+.features-canyon__number,
+.features-advantage__item-number {
 	position: relative;
+}
+.features-city__number::before,
+.features-canyon__number::before {
+	content: "";
+	position: absolute;
+	top: 47%;
+	left: 174px;
+	width: 9px;
+	height: 2px;
+	background-color: #ffffff;
+}
+.features-city__number::after,
+.features-canyon__number::after {
+	content: "";
+	position: absolute;
+	top: 47%;
+	right: 175px;
+	width: 9px;
+	height: 2px;
+	background-color: #ffffff;
 }
 .features-city__text,
 .features-canyon__text {
@@ -175,8 +195,10 @@ input[type="radio"].visually-hidden {
 }
 .features-benefits__list {
 	display: flex;
-	justify-content: space-around;
-	
+	justify-content: flex-start;
+}
+.features-benefits__item {
+	width: 400px;
 }
 .features-benefits__item-header,
 .features-advantage__item-title {
@@ -192,7 +214,7 @@ input[type="radio"].visually-hidden {
 .house-icon {
 	display: block;
 	margin: 0 auto;
-	margin-bottom: 30px;
+	margin-bottom: 31px;
 	width: 75px;
 	height: 72px;
 	background-image: url("../img/icon-1.svg")
@@ -200,7 +222,7 @@ input[type="radio"].visually-hidden {
 .food-icon {
 	display: block;
 	margin: 0 auto;
-	margin-bottom: 30px;
+	margin-bottom: 32px;
 	width: 74px;
 	height: 70px;
 	background-image: url("../img/icon-3.svg")
@@ -208,7 +230,7 @@ input[type="radio"].visually-hidden {
 .gift-icon {
 	display: block;
 	margin: 0 auto;
-	margin-bottom: 30px;
+	margin-bottom: 27px;
 	width: 64px;
 	height: 76px;
 	background-image: url("../img/icon-2.svg")
@@ -224,6 +246,27 @@ input[type="radio"].visually-hidden {
 .features-benefits__item-text {
 	margin-bottom: 83px;
 }
+.bands {
+	position: relative;
+}
+.bands::before {
+	content: "";
+	position: absolute;
+	top: 47%;
+	left: 174px;
+	width: 9px;
+	height: 2px;
+	background-color: #979797;
+}
+.bands::after {
+	content: "";
+	position: absolute;
+	top: 47%;
+	right: 175px;
+	width: 9px;
+	height: 2px;
+	background-color: #979797;	
+}
 
 /* FEATURES-CANYON */
 
@@ -232,7 +275,7 @@ input[type="radio"].visually-hidden {
 }
 .features-advantage__list {
 	display: flex;
-	justify-content: space-around;
+	justify-content: flex-start;
 	margin-bottom: 52px;
 	padding-top: 47px;
 	background-color: #eee;
@@ -240,6 +283,7 @@ input[type="radio"].visually-hidden {
 .features-advantage__item {
 	display: flex;
 	flex-direction: column;
+	width: 400px;
 }
 .features-advantage__item-title {
 	margin-bottom: 22px;
@@ -270,7 +314,6 @@ input[type="radio"].visually-hidden {
 	line-height: 24px;
 	color: #333;
 }
-
 .button__search {
 	display: block;
 	position: relative;
@@ -309,7 +352,7 @@ input[type="radio"].visually-hidden {
 .form-search {
 	display: block;
 	animation-name: translate;
-	animation-duration: 1.3s;
+	animation-duration: 0.9s;
 }
 @keyframes translate {
 	0% {
@@ -333,6 +376,10 @@ input[type="radio"].visually-hidden {
 	line-height: 26px;
 	font-weight: bold;
 }
+_:-ms-fullscreen,
+:root .search-form__label  { 
+	width: 130px;
+}
 .arrival {
 	margin-right: 17px;
 }
@@ -348,12 +395,20 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   width: 100%;
   padding: 6px 60px 6px 16px;
+/*  padding-top: 6px;
+  padding-right: 60px;
+  padding-bottom: 6px;
+  padding-left: 16px;*/
   text-transform: uppercase;
 	border: none;
 	line-height: 26px;
 	font-weight: bold;
 	cursor: pointer;
 	background-color: #f2f2f2;
+}
+_:-ms-fullscreen,
+:root .search-form__input { 
+	padding-bottom: 16px;
 }
 .search-form__input:hover {
 	background-color: #ebebeb;
@@ -368,12 +423,16 @@ input[type="radio"].visually-hidden {
 }
 .panel .search-form__input {
 	width: 114px;
-	padding-right: 50px;
-	padding-left: 50px;
+	padding-right: 40px;
+	padding-left: 40px;
 	text-align: center;
 }
 .adults {
 	margin-right: 53px;
+}
+_:-ms-fullscreen,
+:root .adults { 
+	margin-right: 67px;
 }
 .search-form__element {
 	display: flex;
@@ -382,6 +441,10 @@ input[type="radio"].visually-hidden {
 }
 .adults .search-form__label {
 	margin-right: 41px;
+}
+_:-ms-fullscreen,
+:root .adults .search-form__label { 
+	margin-right: 25px;
 }
 .children .search-form__label {
 	margin-right: 27px;
@@ -401,6 +464,10 @@ input[type="radio"].visually-hidden {
 }
 .number-plus {
 	right: 0;
+}
+_:-ms-fullscreen,
+:root .adults .number-plus  { 
+	right: -14px;
 }
 .number-minus::after {
 	content: "";
