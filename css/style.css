@@ -309,7 +309,7 @@ input[type="radio"].visually-hidden {
 .form-search {
 	display: block;
 	animation-name: translate;
-	animation-duration: 1.3s;
+	animation-duration: 1.5s;
 }
 @keyframes translate {
 	0% {
@@ -572,7 +572,6 @@ input[type="radio"].visually-hidden {
 .footer-copyright__link:active {
 	fill: #bdbbbc;
 }
-
 /*** CATALOG ***/
 
 .services {
