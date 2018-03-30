@@ -92,7 +92,7 @@ input[type="radio"].visually-hidden {
 }
 .main-navigation__link:active {
 	color: #000;
-	opacity: 30%:
+	opacity: 0.3;
 }
 .main-navigation__link:focus {
 	outline: none;
